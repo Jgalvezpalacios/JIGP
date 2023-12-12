@@ -1,2 +1,2 @@
 # JIGP
-Almost-JGEP
+Almost-JPG
