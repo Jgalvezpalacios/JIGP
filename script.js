@@ -25,8 +25,8 @@ function sendEmail(){
     Email.send({
         Host : "mail.cinfo.cl",
         Username : "cinfo@cinfo.cl",
-        Password : "Jaga1570",
-        To : 'jgalvezabarca@gmail.com',
+        Password : "",
+        To : '',
         From : document.getElementById("email").value,
         Subject : "Nuevo contacto Cinfo",
         Body : "Nombre" + document.getElementById("name").value
