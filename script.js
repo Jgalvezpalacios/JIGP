@@ -39,7 +39,6 @@ function sendEmail(){
     );
 }
 
-
 //en caso de querer utilizar el slider con js, se puede usar el siguiente codigo
 //  var copy = document.querySelector(".logo-slide").cloneNode(true);
 //  document.querySelectorx(.logos).appendChild(copy);
