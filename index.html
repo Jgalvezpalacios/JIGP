@@ -1,37 +1,170 @@
-<!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
- 		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		 <title>Portafolio Digital Jorge Gálvez</title>
-		 <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<header>
-			<h1>
-				<div>
-					Jorge Ignacio Gálvez Palacios - Estudiante de periodismo
-				</div>
-			</h1>
-			<div></div>
-		</header>
+<!DOCTYPE html>
+<html>
 
-		<section>
-			<div>
-				Subtitulo
-			</div>
-			<article>
-				<p>
-					Información de mi vida
-				</p>
-				<p>
-					Más relleno
-				</p>
-			</article>
-		</section>
-		<footer>
-			Parte del final
-		</footer>
-	</body>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
+        <title>Cinfo Consultores SpA</title>
+</head>
+
+<body>
+    <div class="header" id="Inicio">
+        <video autoplay loop class="back-video" muted play-inline>
+            <source src="Videos\video.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <a href="C:\Users\maste\OneDrive\Desktop\Cinfo_pag\index.html" target="">
+                <img src="Imagenes\Cinfo con sombra.png" class="logo"></img>
+            </a>
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a href="#Inicio">Inicio</a></li>
+                <li class="hideOnMobile"><a href="#Historia">Historia</a></li>
+                <li class="hideOnMobile"><a href="#Servicios">Servicios</a></li>
+                <li class="hideOnMobile"><a href="#Contacto">Contacto</a></li>
+                <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Historia">Historia</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>
+                Cinfo Consultores SpA.
+            </h1>
+            <hr>
+            <h2>
+                Experiencia y seriedad en la implementación de soluciones TI  
+            </h2>
+        </div>
+    </div>
+
+    <section class="full-height Historia" id="Historia">
+        <div class="container2">
+            <div class="figure">
+                <div><img src="Imagenes/edificio.jpg"></div>
+                <div class="texto-der">
+                    <h1>
+                        Sobre Cinfo
+                    </h1>
+                    <hr>
+                    <h5>Lorem ipsum dolor sit amet </h5>
+                    <button class="boton-contenido" type="button">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Servicios">
+        <div>
+            <h2>Servicios</h2>
+            <p> CINFO CONSULTORES SPA es una empresa chilena nacida el año 2000 para apoyar el quehacer empresarial desde la entrega de servicios informáticos en su más amplia expresión.
+            </p>
+            <p>
+                A lo largo de estos años hemos incursionado en varias áreas del servicio TI, desde la capacitación formal como OTEC certificada, hasta el outsourcing de personal técnico.
+            </p>
+            <p>
+                La experiencia acumulada nos permite ofrecer hoy un apoyo completo TI a empresas de diferentes tamaños. Nuestros servicios van desde la construcción de sitios corporativos hasta el desarrollo e implementación de soluciones en base a diferentes tecnologías, tanto modernas como tradicionales.
+            </p>
+
+        </div>
+        <div>
+            <h3>Diseño de soluciones informáticas</h3>
+            <p>
+                Somos especialistas por formación profesional en el levantamiento de requerimientos, la identificación de oportunidades de mejora, la mejora y automatización de procedimientos, el modelamiento de datos y la especificación de funciones para su programación.
+            </p>
+        </div>
+        <div>
+            <h3>Desarrollo de soluciones informáticas</h3>
+            <p>
+                Programación de funciones en una herramienta adecuada en base al objetivo de la aplicación. Las posibilidades son: PHP, Visual Studio Code, Python, Microsoft Power Platform.
+            </p>
+        </div>
+        <div>
+            <h3>Base de datos relaciones</h3>
+            <p>
+                Somos especialistas en el modelamiento de datos y la construcción de procedimientos dentro del motor para darle consistencia a los sistemas cuyos datos son finalmente almacenados en este tipo de herramientas. Nuestra experiencia nos permite ofrecer soluciones basadas en Oracle, SQLServer y DB2.
+            </p>
+        </div>
+        <div class="galeria">
+            <div class="col">
+                <h2>
+                    Problema
+                </h2>
+                <div class="descripcion">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                         
+                    </p>
+                    <button type="button">Ver más</button>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+                    Consulta
+                </h2>
+                <div class="descripcion">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button type="button">Ver más</button>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+                    Solucion
+                </h2>
+                <div class="descripcion">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button type="button">Ver más</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="full-height Contacto" id="Contacto">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;"><!--agregar correo en archivo js-->
+                <h3>Contacto</h3>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" placeholder="Correo" required>
+                <input type="text" id="telefono" placeholder="Teléfono" required>
+                <input type="text" id="empresa" placeholder="Empresa" required>
+                <textarea id="mensaje" rows="6" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="Imagenes\Logos\abcdin.png"/>
+            <img src="Imagenes\Logos\elecmetal.png"/>
+            <img src="Imagenes\Logos\kaufmann.png"/>
+            <img src="Imagenes\Logos\lexmark.jpg"/>
+            <img src="Imagenes\Logos\abcdin.png"/>
+            <img src="Imagenes\Logos\logo.00321450.svg"/>
+            <img src="Imagenes\Logos\santarita.jpg"/>
+            <img src="Imagenes\Logos\ticel2.png"/>
+        </div>
+        <div class="logos-slide">
+            <img src="Imagenes\Logos\abcdin.png"/>
+            <img src="Imagenes\Logos\elecmetal.png"/>
+            <img src="Imagenes\Logos\kaufmann.png"/>
+            <img src="Imagenes\Logos\lexmark.jpg"/>
+            <img src="Imagenes\Logos\abcdin.png"/>
+            <img src="Imagenes\Logos\logo.00321450.svg"/>
+            <img src="Imagenes\Logos\santarita.jpg"/>
+            <img src="Imagenes\Logos\ticel2.png"/>
+        </div>
+    </div>
+</body>
 </html>
