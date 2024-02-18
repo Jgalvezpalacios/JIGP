@@ -106,7 +106,7 @@ nav a:hover{
 .logo{
     width: 50px;
     height:50px;
-    margin-left: 20px;
+    margin-right: auto;
 }
 
 .sidebar{
@@ -447,7 +447,7 @@ form button{
 /* pie de pagina */
 .pie{
     width: 100%;
-    background-color: #000000;
+    background-color: #05111d;
 }
 .pie .grupo-1{
     width: 100%;
