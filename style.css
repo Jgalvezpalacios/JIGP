@@ -61,6 +61,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+hr {
+    height:5px;
+    border-width:0;
+    background-color:#ffffff;
+    z-index: 1;
+  }
+
 /*barra navegacion*/
 nav{
     background-color: rgb(224, 224, 224);
@@ -71,12 +78,6 @@ nav{
     font-size: 20px;
     font-weight: bold;
 }
-hr {
-    height:5px;
-    border-width:0;
-    background-color:#ffffff;
-    z-index: 1;
-  }
 
 nav ul{
     width: 100%;
@@ -96,52 +97,16 @@ nav a{
     align-items: center;
     color: black;
 }
-.sidebar a:hover{
+nav a:hover{
     background-color: #f0f0f0;
     height: 100%;
     width: 100%;
 }
 
 .logo{
-    width: 140px;
+    width: 50px;
+    height:50px;
     margin-left: 20px;
-}
-
-.nav-links{
-    padding: 28px 0;
-}
-
-.nav-links li{
-    display: inline-block;
-    margin-right: 5%;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: #000000;
-    padding: 5px 0;
-    position: relative;
-}
-
-.nav-links li a::after{
-    content: '';
-    background: blue;
-    width: 0;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-.nav-links li a:hover::after{
-    width: 100%;
-}
-.navbar .toggle_btn {
-    color:#fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
 }
 
 .sidebar{
@@ -164,17 +129,7 @@ nav a{
     width: 100%;
 }
 .sidebar a{
-width: 100%;
-}
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-}
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
+    width: 100%;
 }
 
 .content{
@@ -339,19 +294,24 @@ form button{
     height: auto;
     z-index: -100;
 }
-@media(min-aspect-ratio: 16/9){
-    .back-video{
+.menu-botton{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
         width: 100%;
-        height: auto;
     }
 }
-@media(max-aspect-ratio: 16/9){
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
-}
-/* Galeria imagenes*/
+
+/* Galeria imagenes
 .galeria{
     width: 60%;
     height: 60vh;
@@ -423,7 +383,8 @@ form button{
 }
 .col:hover h2{
     text-align: left;
-}
+} 
+*/
 /*Textos y escritura*/
 .cinfohistoria{
     justify-content: left;
