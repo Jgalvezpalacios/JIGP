@@ -542,7 +542,9 @@ form button{
     height: auto;
     background-color: rgb(214, 214, 214);
 }
-
+#Historia{
+    text-align: center;
+}
 #Contacto{
     text-align: center;
     background-image: blue;
