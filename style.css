@@ -415,24 +415,41 @@ form button{
     height: 100vh;
     display: flex;
 /* eje x */
+    justify-content: start;
+/* eje y */    
+    align-items: center;
+}
+.container3{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20vh 20vh 20vh;
+    gap: 2%;
+    background-color: #2196F3;
+/* eje x */
     justify-content: center;
 /* eje y */    
     align-items: center;
 }
+.container3 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 
 .figure{
     color: rgb(19, 18, 18);
-    background-color: #999999;
+    background: linear-gradient(90deg, rgba(116,116,116,1) 0%, rgba(159,158,158,1) 18%, rgba(255,255,255,1) 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    width: 70vw;
+    width: 100vw;
     height: 50vh;
-    border-radius: 30px;
 }
 .figure img{
-    height: 250px;
+    height: 350px;
+    width: 600px;
     border-radius: 30px;
 }
 .figure h1{
@@ -510,7 +527,7 @@ form button{
 }
 
 #Servicios{
-    height: 300vh;
+    height: 100vh;
     background-color: rgb(214, 214, 214);
 }
 
